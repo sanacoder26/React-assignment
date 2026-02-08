@@ -31,55 +31,55 @@ const MaréePortfolio = () => {
     {
       id: 1,
       title: "Main Home",
-      image: "https://images.unsplash.com/photo-1542744173-8e7655c90953?w=800",
+      image: "image1.jpg",
       description: "Projects made with love"
     },
     {
       id: 2,
       title: "Portfolio",
-      image: "https://images.unsplash.com/photo-1504674900247-08769ae3810d?w=800",
+      image: "image2.jpg",
       description: "hello"
     },
     {
       id: 3,
       title: "Portfolio Pinterest",
-      image: "https://images.unsplash.com/photo-1551288049-bebda07e12901?w=800",
+      image: "image3.jpg",
       description: "Share the experience"
     },
     {
       id: 4,
       title: "Animated Slides",
-      image: "https://images.unsplash.com/photo-1542281286-9e0a16bb7366?w=800",
+      image: "image4.jpg",
       description: "Ziggy"
     },
     {
       id: 5,
       title: "Portfolio Metro",
-      image: "https://images.unsplash.com/photo-1551650975-87deedd944c4?w=800",
+      image: "",
       description: "A"
     },
     {
       id: 6,
       title: "Portfolio Gallery",
-      image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800",
+      image: "image6.jpg",
       description: "Q"
     },
     {
       id: 7,
       title: "Interactive Links",
-      image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800",
+      image: "image7.jpg",
       description: "Love songs"
     },
     {
       id: 8,
       title: "Split Slider Showcase",
-      image: "https://images.unsplash.com/photo-1551882608-91343c0b8d57?w=800",
+      image: "image8.jpg",
       description: "The first step is to know your goals"
     },
     {
       id: 9,
       title: "Portfolio Carousel",
-      image: "https://images.unsplash.com/photo-1551434678-e076c2238b5b?w=800",
+      image: "image9.jpg",
       description: "Carve out ideas"
     }
   ];
