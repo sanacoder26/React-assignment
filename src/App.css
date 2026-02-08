@@ -1,0 +1,623 @@
+/* Marée.css - Enhanced with smooth animations matching ThemeForest preview */
+.marée-portfolio {
+  position: relative;
+  min-height: 100vh;
+  background: #fff;
+  overflow-x: hidden;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Decorative elements */
+.decoration {
+  position: absolute;
+  z-index: 0;
+}
+
+.top-left {
+  top: 20px;
+  left: 20px;
+}
+
+.top-right {
+  top: 20px;
+  right: 20px;
+}
+
+.bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+
+.bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+
+.bottom-center {
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Leaf and decorative element styling */
+.leaf {
+  position: absolute;
+  opacity: 0.7;
+}
+
+.leaf-1 {
+  width: 60px;
+  height: 60px;
+  top: -15px;
+  left: -15px;
+  background: #c8e6c9;
+  border-radius: 50%;
+  transform: rotate(10deg);
+  animation: float 8s ease-in-out infinite;
+}
+
+.leaf-2 {
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  left: 20px;
+  background: #e8f5e9;
+  border-radius: 50%;
+  transform: rotate(-5deg);
+  animation: float 6s ease-in-out infinite;
+}
+
+.leaf-3 {
+  width: 40px;
+  height: 40px;
+  top: -10px;
+  right: 15px;
+  background: #c8e6c9;
+  border-radius: 50%;
+  transform: rotate(8deg);
+  animation: float 7s ease-in-out infinite;
+}
+
+.leaf-4 {
+  width: 60px;
+  height: 60px;
+  bottom: -10px;
+  left: 15px;
+  background: #e8f5e9;
+  border-radius: 50%;
+  transform: rotate(-12deg);
+  animation: float 9s ease-in-out infinite;
+}
+
+.leaf-5 {
+  width: 70px;
+  height: 70px;
+  bottom: 15px;
+  left: -15px;
+  background: #c8e6c9;
+  border-radius: 50%;
+  transform: rotate(5deg);
+  animation: float 8s ease-in-out infinite;
+}
+
+.leaf-6 {
+  width: 50px;
+  height: 50px;
+  bottom: -15px;
+  right: 10px;
+  background: #e8f5e9;
+  border-radius: 50%;
+  transform: rotate(-8deg);
+  animation: float 7s ease-in-out infinite;
+}
+
+.leaf-7 {
+  width: 35px;
+  height: 35px;
+  bottom: 10px;
+  right: -10px;
+  background: #c8e6c9;
+  border-radius: 50%;
+  transform: rotate(15deg);
+  animation: float 6s ease-in-out infinite;
+}
+
+.leaf-8 {
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  left: -20px;
+  background: #e8f5e9;
+  border-radius: 50%;
+  transform: rotate(10deg);
+  animation: float 8s ease-in-out infinite;
+}
+
+.leaf-9 {
+  width: 30px;
+  height: 30px;
+  top: 30px;
+  right: -15px;
+  background: #c8e6c9;
+  border-radius: 50%;
+  transform: rotate(-15deg);
+  animation: float 7s ease-in-out infinite;
+}
+
+.leaf-10 {
+  width: 50px;
+  height: 50px;
+  top: 15px;
+  left: -25px;
+  background: #e8f5e9;
+  border-radius: 50%;
+  transform: rotate(20deg);
+  animation: float 9s ease-in-out infinite;
+}
+
+/* Floating leaves for enhanced animation */
+.floating-elements {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.floating-leaf {
+  position: absolute;
+  opacity: 0.4;
+  animation: float 12s linear infinite;
+}
+
+.leaf-11 {
+  width: 25px;
+  height: 25px;
+  top: 25%;
+  left: 15%;
+  background: #c8e6c9;
+  border-radius: 50%;
+  animation-delay: 0s;
+}
+
+.leaf-12 {
+  width: 30px;
+  height: 30px;
+  top: 45%;
+  right: 20%;
+  background: #e8f5e9;
+  border-radius: 50%;
+  animation-delay: 2s;
+}
+
+.leaf-13 {
+  width: 20px;
+  height: 20px;
+  bottom: 30%;
+  left: 25%;
+  background: #c8e6c9;
+  border-radius: 50%;
+  animation-delay: 1s;
+}
+
+.leaf-14 {
+  width: 35px;
+  height: 35px;
+  top: 65%;
+  right: 10%;
+  background: #e8f5e9;
+  border-radius: 50%;
+  animation-delay: 3s;
+}
+
+.leaf-15 {
+  width: 28px;
+  height: 28px;
+  bottom: 15%;
+  left: 40%;
+  background: #c8e6c9;
+  border-radius: 50%;
+  animation-delay: 4s;
+}
+
+/* Heart styling */
+.heart {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #ff80ab;
+  border-radius: 50% 50% 0 50%;
+  transform: rotate(-45deg);
+  opacity: 0.8;
+}
+
+.heart-2 {
+  top: 20px;
+  right: 20px;
+}
+
+.heart-3 {
+  bottom: 20px;
+  left: 20px;
+}
+
+.heart-4 {
+  top: 15px;
+  left: 25px;
+  width: 30px;
+  height: 30px;
+}
+
+/* Bird styling */
+.bird {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  background: #ff80ab;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+/* Bike illustration */
+.bike-illustration {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 120px;
+  height: auto;
+  opacity: 0.8;
+}
+
+/* Character illustration */
+.character {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  height: auto;
+  z-index: 2;
+}
+
+.character-head {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  background: #ff9e80;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.character-body {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 60px;
+  background: #90a4ae;
+  border-radius: 50% 50% 0 0;
+  z-index: 1;
+}
+
+.character-guitar {
+  position: absolute;
+  top: 60px;
+  left: 40%;
+  width: 80px;
+  height: 40px;
+  background: #ffcc80;
+  border-radius: 10px;
+  transform: rotate(15deg);
+}
+
+.character-bench {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 40px;
+  background: #8d6e63;
+  border-radius: 10px 10px 0 0;
+}
+
+.character-bench::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  width: 10px;
+  height: 20px;
+  background: #8d6e63;
+}
+
+.character-bench::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  width: 10px;
+  height: 20px;
+  background: #8d6e63;
+}
+
+/* Header styles */
+.marée-header {
+  text-align: center;
+  padding: 60px 20px 40px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 20px;
+}
+
+.marée-title {
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0 0 15px;
+  position: relative;
+  display: inline-block;
+  font-family: 'Dancing Script', cursive;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.marée-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: #ff80ab;
+  border-radius: 2px;
+}
+
+.marée-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Portfolio grid */
+.portfolio-grid {
+  position: relative;
+  z-index: 2;
+  padding: 0 15px 60px;
+}
+
+.portfolio-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  height: 100%;
+  position: relative;
+  transform: translateY(0);
+  cursor: pointer;
+  background: white;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-image-wrapper {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.portfolio-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-card:hover .portfolio-image {
+  transform: scale(1.05);
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.3s ease;
+}
+
+.portfolio-card:hover .card-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-title {
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card-content {
+  padding: 20px;
+  background: white;
+}
+
+.card-description {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  padding: 60px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.cta-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 30px;
+  line-height: 1.3;
+}
+
+.cta-button {
+  background: #ff80ab;
+  color: white;
+  border: none;
+  padding: 12px 35px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 128, 171, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-button:hover {
+  background: #e06696;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 128, 171, 0.6);
+}
+
+.cta-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: 0.5s;
+}
+
+.cta-button:hover::before {
+  left: 100%;
+}
+
+/* Animations */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.card-transition-enter {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.card-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s ease;
+}
+
+.card-transition-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-transition-exit-active {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.5s ease;
+}
+
+/* Float animation for decorative elements */
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(10deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .marée-title {
+    font-size: 3rem;
+  }
+  
+  .portfolio-card {
+    height: auto;
+  }
+  
+  .card-image-wrapper {
+    height: 250px;
+  }
+  
+  .leaf-1, .leaf-2, .leaf-3, .leaf-4, .leaf-5, .leaf-6, .leaf-7, .leaf-8, .leaf-9, .leaf-10 {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .marée-title {
+    font-size: 2.2rem;
+  }
+  
+  .marée-subtitle {
+    font-size: 1rem;
+  }
+  
+  .card-image-wrapper {
+    height: 200px;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .leaf-1, .leaf-2, .leaf-3, .leaf-4, .leaf-5, .leaf-6, .leaf-7, .leaf-8, .leaf-9, .leaf-10 {
+    width: 30px;
+    height: 30px;
+  }
+}
