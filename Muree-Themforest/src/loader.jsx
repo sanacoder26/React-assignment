@@ -50,15 +50,21 @@ function Loader({onFinished}) {
   return (
     <div ref={containerRef} className="loader-container">
       <div className="loader-content">
-        <svg ref={svgRef} className="loader-butterfly" viewBox="0 0 100 100" xmlns="butterflybg.png">
-          <path className="wing left-wing"
-            d="M30 80 Q 5 60 20 20 Q 70 30 30 80 Z"
+          <svg
+  ref={svgRef}
+  className="loader-butterfly"
+  viewBox="0 0 100 100"
+  xmlns="./images/butterfly.png"
+>
+ <path className="wing left-wing"
+            d="M50 80 Q 10 60 20 20 Q 45 30 50 80 Z"
             fill="#F08080" />
           <path className="wing right-wing"
-            d="M30 80 Q 55 60 40 20 Q -10 30 30 80 Z"
-            fill="#FF69B4" />
+            d="M50 80 Q 90 60 80 20 Q 55 30 50 80 Z"
+            fill="#F08080" />
         </svg>
         <h1 ref={textRef} className="loader-text">Marée</h1>
+        
       </div>
     </div>
   );

@@ -6,6 +6,8 @@ import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './header.css'
 
+
+
 function Header() {
   useEffect(() => {
     AOS.init({
@@ -29,6 +31,7 @@ function Header() {
   return (
     <>
       <div className="hero1" style={{ position: 'relative', marginBottom: '30px' }}>
+      
         <img data-aos="fade-left" src="/images/bgmar1.png" className="bg bird" alt="Bird" />
         <img src="/images/bigleafbg.png" className="bg leaf-2" alt="Leaf 2" />
         <img data-aos="fade-down" src="/images/cloudbg.png" className="bg cloud-1" alt="Cloud 1" />
@@ -38,6 +41,7 @@ function Header() {
         <img data-aos="fade-left" src="/images/leaf3bg.png" className="bg leaf-4" alt="Leaf 4" />
         <img data-aos="fade-right" src="/images/leaf4bg.png" className="bg leaf-5" alt="Leaf 5" />
         <img data-aos="fade-left" src="/images/h3leaf.png" className="bg leaf-skin" alt="Leaf Skin" />
+        
         <img src="/images/pinkdotbg.png" className="bg dot" alt="Dot" />
         <img src="/images/pinkdotbg.png" className="bg dot2" alt="Dot 2" />
         <img src="/images/pinkdotbg.png" className="bg dot3" alt="Dot 3" />
@@ -48,8 +52,9 @@ function Header() {
           <h1 className="logotext">
             <img src="/images/logo maree.png" alt="Marée Logo" style={{ maxWidth: '400px', width: '100%' }} />
           </h1>
+          
           <p className="subText">Welcome to Marée, a brand new illustration & design portfolio just waiting for your work to start populating its templates!</p>
-          <button className="hero-btn" onMouseEnter={handleMouseEnter}>
+          <button className="hero3-btn" onMouseEnter={handleMouseEnter}>
             <span className="fill-layer"></span>
             <span className="btn-text">PURCHASE</span>
           </button>
