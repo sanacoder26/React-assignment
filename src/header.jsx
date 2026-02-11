@@ -49,9 +49,23 @@ function Header() {
         <img data-aos="fade-down" src="/images/butterflybg.png" className="bg fly" alt="Butterfly" />
 
         <div className="texth1">
-          <h1 className="logotext">
-            <img src="/images/logo maree.png" alt="Marée Logo" style={{ maxWidth: '400px', width: '100%' }} />
-          </h1>
+  <div className="logo-container">
+    <img 
+      src="/images/logo maree.png" 
+      alt="Marée Logo" 
+      className="logotext"
+      style={{ maxWidth: '400px', width: '100%' }} 
+    />
+    <img 
+      src="/images/butterflybg.png" 
+      alt="Butterfly" 
+      className="butterfly" 
+    />
+  </div>
+  
+
+
+
           
           <p className="subText">Welcome to Marée, a brand new illustration & design portfolio just waiting for your work to start populating its templates!</p>
           <button className="hero3-btn" onMouseEnter={handleMouseEnter}>
